@@ -5,9 +5,9 @@ const darkBtn = document.querySelector('.dark-mode-icon')
 darkBtn.addEventListener('click', () => {
   html.classList.toggle('dark-mode')
   if(html.classList.contains('dark-mode')) {
-    darkBtn.src = "../../assets/icons/sun.svg"
+    darkBtn.src = "./assets/icons/sun.svg"
   } else {
-    darkBtn.src = "../../assets/icons/moon.svg"
+    darkBtn.src = "./assets/icons/moon.svg"
   }
 })
 
