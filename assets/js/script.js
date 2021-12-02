@@ -4,10 +4,10 @@ const darkBtn = document.querySelector('.dark-mode-icon')
 
 darkBtn.addEventListener('click', () => {
   html.classList.toggle('dark-mode')
-  if(html.classList.contains('dark-mode')) {
-    darkBtn.src = "./assets/icons/sun.svg"
+  if (html.classList.contains('dark-mode')) {
+    darkBtn.src = './assets/icons/sun.svg'
   } else {
-    darkBtn.src = "./assets/icons/moon.svg"
+    darkBtn.src = './assets/icons/moon.svg'
   }
 })
 
@@ -35,4 +35,10 @@ setInterval(function () {
   }
 }, 500)
 
-// FAZ COM QUE SÓ UM FAQ SEJA SELECIONADO POR VEZ
+// FAZ COM QUE SÓ UM ELEMENTO SEJA SELECIONADO POR VEZ (usado no FAQ e no ABOUT)
+const accordion = document.querySelectorAll('.content-box')
+for (let c = 0; c < accordion.length; c++) {
+  accordion[c].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
