@@ -35,10 +35,10 @@ setInterval(function () {
   }
 }, 500)
 
-// FAZ COM QUE SÓ UM ELEMENTO SEJA SELECIONADO POR VEZ (usado no FAQ e no ABOUT)
+// usado no ABOUT
 const accordion = document.querySelectorAll('.content-box')
 for (let c = 0; c < accordion.length; c++) {
   accordion[c].addEventListener('click', function () {
     this.classList.toggle('active')
   })
-}
+};
