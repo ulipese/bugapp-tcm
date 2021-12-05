@@ -1,13 +1,15 @@
 //DARK MODE
 const html = document.querySelector('html')
 const darkBtn = document.querySelector('.dark-mode-icon')
-
+const logo = document.querySelector('.icon-logo')
 darkBtn.addEventListener('click', () => {
   html.classList.toggle('dark-mode')
   if (html.classList.contains('dark-mode')) {
     darkBtn.src = './assets/icons/sun.svg'
+    logo.href = './assets/icons/logo-white-mode.png'
   } else {
     darkBtn.src = './assets/icons/moon.svg'
+    logo.href = './assets/icons/logo-dark-mode.png'
   }
 })
 
@@ -41,4 +43,4 @@ for (let c = 0; c < accordion.length; c++) {
   accordion[c].addEventListener('click', function () {
     this.classList.toggle('active')
   })
-};
+}
